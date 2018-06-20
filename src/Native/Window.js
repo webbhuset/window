@@ -3,8 +3,8 @@ var _webbhuset$window$Native_Window = function()
 
 var size = _elm_lang$core$Native_Scheduler.nativeBinding(function(callback)	{
 	callback(_elm_lang$core$Native_Scheduler.succeed({
-		width: document.body.getBoundingClientRect().width,
-		height: document.body.getBoundingClientRect().height
+		width: Math.round(document.body.getBoundingClientRect().width),
+		height: window.innerHeight
 	}));
 });
 
